@@ -12,7 +12,7 @@ namespace UncyclOS.Core
         // operating system
         public static string OSName = "UncyclOS";
         public static double OSVersion = 0.01;
-        public static string KernelVersion = "20200708";
+        public static string KernelVersion = "20210400";
 
         // ram
         public static uint TotalRAM { get { return Cosmos.Core.CPU.GetAmountOfRAM(); } }
@@ -34,7 +34,7 @@ namespace UncyclOS.Core
             CLI.WriteLine("    |    user kit " + KernelVersion, Color.Gray);
             ShowRAM();
             CLI.Write("\n");
-            CLI.Write("Based on the UncycloKernel, whose slogan is \"Linux [sic] for human beans.\"\n \n(Who's gonna remind them that it's GNU/Linux? Kev?)\n\nThis operating system is free software; you can find source code at JJPMaster's GitHub profile under the repository called \"UncyclOS\". \n");
+            CLI.Write("Based on the UncycloKernel, whose slogan is \"Linux [sic] for human beans.\"\n \n(Who's gonna remind them that it's GNU/Linux? Kev?)\n\nThis operating system is free software; you can find source code at JJPMaster's GitHub profile under the repository called \"UncyclOS\". It is licensed under the GNU Affero General Public License v3.0.\n");
         }
 
         // show total ram
