@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using UncyclOS.Hardware;
@@ -13,7 +13,7 @@ namespace UncyclOS.Core
         public static Color DateTimeColor = Color.White;
         public static Color TitleColor = Color.Magenta;
         public static bool TitleBarVisible = true;
-        public static string TitleBarText = "UncyclOS Shell";
+        public static string TitleBarText = "UncyclOS Shell: That one OS...";
         public static string TitleBarTime = RTC.GetDateFormatted() + " " + RTC.GetTimeFormatted();
 
         // command list
@@ -60,6 +60,7 @@ namespace UncyclOS.Core
             Commands.Add(new Commands.CMDSetDir());
             Commands.Add(new Commands.CMDListDir());
             Commands.Add(new Commands.CMDMakeDir());
+            Commands.Add(new Commands.CMDMakeDir2());
             Commands.Add(new Commands.CMDDelDir());
             Commands.Add(new Commands.CMDDelDir2());
             Commands.Add(new Commands.CMDCutFile());
